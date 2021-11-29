@@ -8,14 +8,31 @@
     android:scrollbarDefaultDelayBeforeFade="300"
     android:scrollbarFadeDuration="250">
 
-    <EditText
-        android:id="@+id/username"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="64dp"
+        android:background="#009688"
+        android:text="כניסה למשתמש חדש:"
+        android:textDirection="firstStrongRtl"
+        android:textIsSelectable="false"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="שם משתמש: " />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="שם משתמש: "
-        android:textSize="14sp" />
+        android:text=""
+        android:textColorHighlight="#090808"
+        android:textColorLink="#0B0A0A" />
 
     <TextView
         android:id="@+id/textView9"
@@ -75,13 +92,15 @@
     <TextView
         android:id="@+id/textView14"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="53dp"
+        android:background="#00009688"
         android:text="לסיום הרשמה לחצו למטה." />
 
     <Button
         android:id="@+id/button_first"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#009688"
         android:text="סיום הרשמה"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,17 +108,16 @@
         app:layout_constraintTop_toBottomOf="@id/textView14" />
 
 
-
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="לחזרה אחורה"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="25dp" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="לחזרה אחורה"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="15dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
